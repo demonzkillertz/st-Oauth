@@ -4,9 +4,9 @@ import json
 import os
 
 # OAuth configuration for Google
-CLIENT_ID = st.secrets["google"]["client_id"]  # Load from secrets.toml
-CLIENT_SECRET = st.secrets["google"]["client_secret"]  # Load from secrets.toml
-REDIRECT_URI = os.getenv("REDIRECT_URI", "https://your-app-name.streamlit.app")  # Update with your deployed app URL
+CLIENT_ID = st.secrets["google"]["client_id"]
+CLIENT_SECRET = st.secrets["google"]["client_secret"]
+REDIRECT_URI = os.getenv("REDIRECT_URI", "https://your-app-name.streamlit.app")
 AUTHORIZE_URL = "https://accounts.google.com/o/oauth2/v2/auth"
 TOKEN_URL = "https://oauth2.googleapis.com/token"
 USERINFO_URL = "https://www.googleapis.com/oauth2/v2/userinfo"
